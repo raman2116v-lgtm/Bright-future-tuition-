@@ -2,221 +2,236 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Bright Future Tuition | Mominpore, Kolkata</title>
-  <meta name="description" content="Bright Future Tuition in Mominpore, Kolkata. Personal attention and concept-based learning for Classes 2 to 8.">
-  <meta name="robots" content="index, follow">
-  <meta name="theme-color" content="#102653">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <style>
-    * { box-sizing: border-box; margin: 0; padding: 0; }
+<title>Bright Future Tuition | Mominpore Kolkata</title>
 
-    body {
-      font-family: Arial, sans-serif;
-      color: #26334a;
-      background: #f6f8fc;
-      line-height: 1.7;
-    }
+<meta name="description" content="Bright Future Tuition offers quality tuition for Classes 2 to 8 in Mominpore, Kolkata.">
+<meta name="robots" content="index, follow">
+<meta name="theme-color" content="#102b63">
 
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f5f7fc;
+    color: #24304a;
+    line-height: 1.6;
+}
+
+header {
+    background: #102b63;
+    color: white;
+    padding: 22px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.logo {
+    font-size: 25px;
+    font-weight: bold;
+    color: #ffd76a;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 18px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #ffd76a;
+}
+
+.hero {
+    background: linear-gradient(135deg, #102b63, #2456a5);
+    color: white;
+    text-align: center;
+    padding: 85px 20px;
+}
+
+.hero h1 {
+    font-size: 42px;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    font-size: 19px;
+    margin-bottom: 25px;
+}
+
+.btn {
+    display: inline-block;
+    background: #ffd76a;
+    color: #102b63;
+    padding: 13px 28px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+section {
+    padding: 60px 8%;
+    text-align: center;
+}
+
+.section-title {
+    color: #102b63;
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+.classes {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 22px;
+}
+
+.card {
+    background: white;
+    padding: 28px;
+    border-radius: 15px;
+    border-bottom: 5px solid #e9b943;
+    box-shadow: 0 5px 18px rgba(0,0,0,0.07);
+}
+
+.card h3 {
+    color: #102b63;
+    margin-bottom: 12px;
+}
+
+.about {
+    background: white;
+}
+
+.features {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.feature {
+    background: #f5f7fc;
+    padding: 22px;
+    border-radius: 12px;
+}
+
+.feature h3 {
+    color: #102b63;
+    margin-bottom: 8px;
+}
+
+.contact {
+    background: #102b63;
+    color: white;
+}
+
+.contact h2 {
+    color: #ffd76a;
+}
+
+footer {
+    background: #091a3b;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+@media (max-width: 600px) {
     header {
-      background: #102653;
-      color: white;
-      padding: 18px 7%;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      flex-wrap: wrap;
-      gap: 12px;
+        justify-content: center;
+        text-align: center;
     }
-
-    .logo { font-size: 23px; font-weight: bold; }
-    .logo span { color: #f5c75e; }
 
     nav a {
-      color: white;
-      text-decoration: none;
-      margin-left: 18px;
-      font-size: 14px;
+        display: inline-block;
+        margin: 5px;
     }
 
-    .hero {
-      background: linear-gradient(130deg, #102653, #214c86);
-      color: white;
-      text-align: center;
-      padding: 85px 20px;
+    .hero h1 {
+        font-size: 32px;
     }
-
-    .hero h1 { font-size: clamp(32px, 6vw, 52px); }
-    .hero h1 span { color: #f5c75e; }
-    .hero p { margin: 15px auto 25px; max-width: 650px; }
-
-    .button {
-      display: inline-block;
-      background: #f5c75e;
-      color: #102653;
-      padding: 12px 25px;
-      border-radius: 7px;
-      text-decoration: none;
-      font-weight: bold;
-    }
-
-    section { padding: 55px 7%; }
-    .section-title {
-      text-align: center;
-      color: #102653;
-      font-size: 30px;
-      margin-bottom: 12px;
-    }
-
-    .intro {
-      text-align: center;
-      max-width: 750px;
-      margin: 0 auto;
-    }
-
-    .cards {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
-      gap: 22px;
-      margin-top: 30px;
-    }
-
-    .card {
-      background: white;
-      padding: 25px;
-      border-radius: 12px;
-      border-top: 4px solid #e9b94e;
-      box-shadow: 0 5px 20px rgba(16,38,83,0.08);
-    }
-
-    .card h3 { color: #102653; margin-bottom: 10px; }
-    .card p { color: #596579; }
-
-    .benefits { background: #eaf0fa; }
-
-    .benefit {
-      text-align: center;
-      padding: 15px;
-    }
-
-    .benefit strong {
-      display: block;
-      color: #102653;
-      font-size: 18px;
-    }
-
-    .contact {
-      background: #102653;
-      color: white;
-      text-align: center;
-    }
-
-    .contact h2 { color: #f5c75e; }
-    .contact p { margin: 12px auto 22px; }
-
-    footer {
-      background: #091a39;
-      color: #dce4f3;
-      text-align: center;
-      padding: 20px;
-      font-size: 13px;
-    }
-
-    @media(max-width: 600px) {
-      header { justify-content: center; text-align: center; }
-      nav a { margin: 0 7px; }
-      .hero { padding: 60px 18px; }
-      section { padding: 42px 6%; }
-    }
-  </style>
+}
+</style>
 </head>
 
 <body>
 
 <header>
-  <div class="logo">Bright Future <span>Tuition</span></div>
-  <nav>
-    <a href="#home">Home</a>
-    <a href="#classes">Classes</a>
-    <a href="#about">About</a>
-    <a href="#contact">Contact</a>
-  </nav>
+    <div class="logo">Bright Future Tuition</div>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#classes">Classes</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+    </nav>
 </header>
 
-<main>
-  <div class="hero" id="home">
-    <h1>Learn Today.<br><span>Lead Tomorrow.</span></h1>
-    <p>
-      Building strong foundations, developing confidence
-      and making learning enjoyable for every student.
-    </p>
-    <a class="button" href="#classes">Explore Our Classes</a>
-  </div>
+<div class="hero" id="home">
+    <h1>Learn Today. Lead Tomorrow.</h1>
+    <p>Building Knowledge, Confidence and Bright Futures.</p>
+    <a href="#contact" class="btn">Enquire Now</a>
+</div>
 
-  <section id="about">
-    <h2 class="section-title">Welcome to Bright Future Tuition</h2>
-    <p class="intro">
-      We believe every student can learn and grow with the
-      right guidance. Our focus is on clear concepts,
-      regular practice and individual attention.
-    </p>
-  </section>
-
-  <section id="classes">
+<section id="classes">
     <h2 class="section-title">Our Classes</h2>
-    <p class="intro">Learning support for students from Classes 2 to 8.</p>
 
-    <div class="cards">
-      <div class="card">
-        <h3>Classes 2–5</h3>
-        <p>All subjects except Bengali and Hindi.</p>
-        <p>Strong basics, homework support and regular practice.</p>
-      </div>
+    <div class="classes">
+        <div class="card">
+            <h3>Classes 2–5</h3>
+            <p>All school subjects except Bengali and Hindi.</p>
+        </div>
 
-      <div class="card">
-        <h3>Classes 6–8</h3>
-        <p>Science and Mathematics.</p>
-        <p>Concept clarity, problem-solving and subject practice.</p>
-      </div>
+        <div class="card">
+            <h3>Classes 6–8</h3>
+            <p>Special guidance in Science and Mathematics.</p>
+        </div>
     </div>
-  </section>
+</section>
 
-  <section class="benefits">
+<section class="about" id="about">
     <h2 class="section-title">Why Choose Us?</h2>
-    <div class="cards">
-      <div class="benefit">
-        <strong>Personal Attention</strong>
-        Individual guidance for students.
-      </div>
-      <div class="benefit">
-        <strong>Clear Concepts</strong>
-        Understand the subject step by step.
-      </div>
-      <div class="benefit">
-        <strong>Regular Practice</strong>
-        Build confidence through revision.
-      </div>
-      <div class="benefit">
-        <strong>Friendly Learning</strong>
-        A positive learning environment.
-      </div>
-    </div>
-  </section>
+    <p>We believe every student deserves the opportunity to learn, improve and succeed.</p>
 
-  <section class="contact" id="contact">
-    <h2>Start Your Learning Journey!</h2>
-    <p>
-      Interested in tuition classes?<br>
-      Please contact the tuition administrator for admission enquiries.
-    </p>
-    <p><strong>Location: Mominpore, Kolkata, West Bengal</strong></p>
-  </section>
-</main>
+    <div class="features">
+        <div class="feature">
+            <h3>📚 Strong Basics</h3>
+            <p>Focus on understanding fundamental concepts.</p>
+        </div>
+
+        <div class="feature">
+            <h3>✏️ Regular Practice</h3>
+            <p>Encouraging consistent learning and revision.</p>
+        </div>
+
+        <div class="feature">
+            <h3>🌟 Personal Attention</h3>
+            <p>Supporting students in their learning journey.</p>
+        </div>
+    </div>
+</section>
+
+<section class="contact" id="contact">
+    <h2 class="section-title">Contact Us</h2>
+    <p><strong>Bright Future Tuition</strong></p>
+    <p>Mominpore, Kolkata, West Bengal</p>
+    <p>For admission enquiries, please contact the tuition administrator.</p>
+</section>
 
 <footer>
-  © 2026 Bright Future Tuition. All rights reserved.
-  <br>Learn • Practise • Grow
+    <p>© 2026 Bright Future Tuition. All Rights Reserved.</p>
+    <p>Learn • Practise • Grow</p>
 </footer>
 
 </body>
