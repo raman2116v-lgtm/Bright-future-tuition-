@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://raman2116v-lgtm.github.io/Bright-future-tuition-/sitemap.xml
