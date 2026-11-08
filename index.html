@@ -1,283 +1,222 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Bright Future Tuition | Mominpore Kolkata</title>
-<meta name="description" content="Bright Future Tuition offers tuition for Classes 2 to 8 in Mominpore, Kolkata. Science, Mathematics and school subject support.">
-<meta name="google-site-verification" content="9vXXQunpdBONrAZuvKS2J6NeHatFbJI5Hv0eAuaOSbE" />
-<meta name="robots" content="index, follow">
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Bright Future Tuition Classes</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bright Future Tuition | Mominpore, Kolkata</title>
+  <meta name="description" content="Bright Future Tuition in Mominpore, Kolkata. Personal attention and concept-based learning for Classes 2 to 8.">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#102653">
 
-<style>
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family:Arial, sans-serif;
-}
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
 
-body{
-    background:#f4f8fc;
-    color:#333;
-    line-height:1.6;
-}
+    body {
+      font-family: Arial, sans-serif;
+      color: #26334a;
+      background: #f6f8fc;
+      line-height: 1.7;
+    }
 
-header{
-    background:linear-gradient(135deg,#0066cc,#00b4d8);
-    color:white;
-    text-align:center;
-    padding:40px 20px;
-}
+    header {
+      background: #102653;
+      color: white;
+      padding: 18px 7%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
 
-header h1{
-    font-size:42px;
-}
+    .logo { font-size: 23px; font-weight: bold; }
+    .logo span { color: #f5c75e; }
 
-header p{
-    font-size:20px;
-    margin-top:10px;
-}
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 18px;
+      font-size: 14px;
+    }
 
-nav{
-    background:#003366;
-    padding:15px;
-    text-align:center;
-}
+    .hero {
+      background: linear-gradient(130deg, #102653, #214c86);
+      color: white;
+      text-align: center;
+      padding: 85px 20px;
+    }
 
-nav a{
-    color:white;
-    text-decoration:none;
-    margin:15px;
-    font-weight:bold;
-}
+    .hero h1 { font-size: clamp(32px, 6vw, 52px); }
+    .hero h1 span { color: #f5c75e; }
+    .hero p { margin: 15px auto 25px; max-width: 650px; }
 
-nav a:hover{
-    color:yellow;
-}
+    .button {
+      display: inline-block;
+      background: #f5c75e;
+      color: #102653;
+      padding: 12px 25px;
+      border-radius: 7px;
+      text-decoration: none;
+      font-weight: bold;
+    }
 
-.hero{
-    text-align:center;
-    padding:60px 20px;
-    background:white;
-}
+    section { padding: 55px 7%; }
+    .section-title {
+      text-align: center;
+      color: #102653;
+      font-size: 30px;
+      margin-bottom: 12px;
+    }
 
-.hero h2{
-    color:#003366;
-    font-size:36px;
-}
+    .intro {
+      text-align: center;
+      max-width: 750px;
+      margin: 0 auto;
+    }
 
-.hero p{
-    font-size:20px;
-    margin-top:15px;
-}
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+      gap: 22px;
+      margin-top: 30px;
+    }
 
-.btn{
-    display:inline-block;
-    margin-top:25px;
-    background:#0077ff;
-    color:white;
-    text-decoration:none;
-    padding:15px 30px;
-    border-radius:8px;
-    font-size:18px;
-}
+    .card {
+      background: white;
+      padding: 25px;
+      border-radius: 12px;
+      border-top: 4px solid #e9b94e;
+      box-shadow: 0 5px 20px rgba(16,38,83,0.08);
+    }
 
-.btn:hover{
-    background:#0056b3;
-}
+    .card h3 { color: #102653; margin-bottom: 10px; }
+    .card p { color: #596579; }
 
-.container{
-    width:90%;
-    max-width:1200px;
-    margin:auto;
-}
+    .benefits { background: #eaf0fa; }
 
-.section-title{
-    text-align:center;
-    color:#003366;
-    margin:40px 0 20px;
-}
+    .benefit {
+      text-align: center;
+      padding: 15px;
+    }
 
-.cards{
-    display:flex;
-    flex-wrap:wrap;
-    justify-content:center;
-    gap:20px;
-}
+    .benefit strong {
+      display: block;
+      color: #102653;
+      font-size: 18px;
+    }
 
-.card{
-    background:white;
-    width:320px;
-    padding:25px;
-    border-radius:12px;
-    box-shadow:0 5px 15px rgba(0,0,0,.15);
-}
+    .contact {
+      background: #102653;
+      color: white;
+      text-align: center;
+    }
 
-.card h3{
-    color:#0077ff;
-    margin-bottom:15px;
-}
+    .contact h2 { color: #f5c75e; }
+    .contact p { margin: 12px auto 22px; }
 
-table{
-    width:100%;
-    border-collapse:collapse;
-    margin-top:20px;
-    background:white;
-}
+    footer {
+      background: #091a39;
+      color: #dce4f3;
+      text-align: center;
+      padding: 20px;
+      font-size: 13px;
+    }
 
-table th{
-    background:#0077ff;
-    color:white;
-}
-
-table th, table td{
-    border:1px solid #ddd;
-    padding:12px;
-    text-align:center;
-}
-
-.contact{
-    background:#003366;
-    color:white;
-    text-align:center;
-    padding:40px 20px;
-    margin-top:40px;
-}
-
-.contact h2{
-    margin-bottom:20px;
-}
-
-footer{
-    background:#001f3f;
-    color:white;
-    text-align:center;
-    padding:15px;
-}
-</style>
-
+    @media(max-width: 600px) {
+      header { justify-content: center; text-align: center; }
+      nav a { margin: 0 7px; }
+      .hero { padding: 60px 18px; }
+      section { padding: 42px 6%; }
+    }
+  </style>
 </head>
+
 <body>
 
 <header>
-    <h1>📚 Bright Future Tuition Classes</h1>
-    <p>Quality Education • Personal Attention • Better Results</p>
+  <div class="logo">Bright Future <span>Tuition</span></div>
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#classes">Classes</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+  </nav>
 </header>
 
-<nav>
-    <a href="#about">About</a>
-    <a href="#courses">Courses</a>
-    <a href="#fees">Fees</a>
-    <a href="#contact">Contact</a>
-</nav>
+<main>
+  <div class="hero" id="home">
+    <h1>Learn Today.<br><span>Lead Tomorrow.</span></h1>
+    <p>
+      Building strong foundations, developing confidence
+      and making learning enjoyable for every student.
+    </p>
+    <a class="button" href="#classes">Explore Our Classes</a>
+  </div>
 
-<section class="hero">
-    <h2>Admissions Open!</h2>
-    <p>Experienced guidance for students from Class 3 to Class 8.</p>
-    <a href="#contact" class="btn">Enroll Now</a>
-</section>
+  <section id="about">
+    <h2 class="section-title">Welcome to Bright Future Tuition</h2>
+    <p class="intro">
+      We believe every student can learn and grow with the
+      right guidance. Our focus is on clear concepts,
+      regular practice and individual attention.
+    </p>
+  </section>
 
-<div class="container">
+  <section id="classes">
+    <h2 class="section-title">Our Classes</h2>
+    <p class="intro">Learning support for students from Classes 2 to 8.</p>
 
-<h2 class="section-title" id="about">Why Choose Us?</h2>
+    <div class="cards">
+      <div class="card">
+        <h3>Classes 2–5</h3>
+        <p>All subjects except Bengali and Hindi.</p>
+        <p>Strong basics, homework support and regular practice.</p>
+      </div>
 
-<div class="cards">
+      <div class="card">
+        <h3>Classes 6–8</h3>
+        <p>Science and Mathematics.</p>
+        <p>Concept clarity, problem-solving and subject practice.</p>
+      </div>
+    </div>
+  </section>
 
-<div class="card">
-<h3>Class 3–5</h3>
-<p>
-✔ All Subjects<br>
-❌ Bengali & Hindi Not Included<br>
-✔ Individual Attention<br>
-✔ Regular Tests & Homework
-</p>
-</div>
+  <section class="benefits">
+    <h2 class="section-title">Why Choose Us?</h2>
+    <div class="cards">
+      <div class="benefit">
+        <strong>Personal Attention</strong>
+        Individual guidance for students.
+      </div>
+      <div class="benefit">
+        <strong>Clear Concepts</strong>
+        Understand the subject step by step.
+      </div>
+      <div class="benefit">
+        <strong>Regular Practice</strong>
+        Build confidence through revision.
+      </div>
+      <div class="benefit">
+        <strong>Friendly Learning</strong>
+        A positive learning environment.
+      </div>
+    </div>
+  </section>
 
-<div class="card">
-<h3>Class 6–8</h3>
-<p>
-✔ Mathematics<br>
-✔ Science<br>
-✔ Concept-Based Learning<br>
-✔ Board Preparation
-</p>
-</div>
-
-<div class="card">
-<h3>Special Features</h3>
-<p>
-✔ Small Batch Size<br>
-✔ Friendly Teaching<br>
-✔ Weekly Assessments<br>
-✔ Doubt Clearing Sessions
-</p>
-</div>
-
-</div>
-
-<h2 class="section-title" id="fees">Fee Structure</h2>
-
-<table>
-<tr>
-<th>Class</th>
-<th>Subjects</th>
-<th>Single Student</th>
-<th>Two Students Together</th>
-</tr>
-
-<tr>
-<td>Class 3</td>
-<td>All Subjects (Except Bengali & Hindi)</td>
-<td>₹3,000 / month</td>
-<td>₹2,500 each / month</td>
-</tr>
-
-<tr>
-<td>Class 4</td>
-<td>All Subjects (Except Bengali & Hindi)</td>
-<td>₹3,500 / month</td>
-<td>₹3,000 each / month</td>
-</tr>
-
-<tr>
-<td>Class 5</td>
-<td>All Subjects (Except Bengali & Hindi)</td>
-<td>₹4,000 / month</td>
-<td>₹3,500 each / month</td>
-</tr>
-
-<tr>
-<td>Class 6–8</td>
-<td>Science & Mathematics</td>
-<td colspan="2">₹5,000 / month</td>
-</tr>
-
-</table>
-
-</div>
-
-<section class="contact" id="contact">
-
-<h2>Contact Us</h2>
-
-<h3>📍 Location</h3>
-<p>Mominpore, Kolkata</p>
-
-<br>
-
-<h3>📞 Phone</h3>
-<p><strong>7980793713</strong></p>
-
-<br>
-
-<h3>Admissions Open!</h3>
-<p>Call now to book your seat.</p>
-
-</section>
+  <section class="contact" id="contact">
+    <h2>Start Your Learning Journey!</h2>
+    <p>
+      Interested in tuition classes?<br>
+      Please contact the tuition administrator for admission enquiries.
+    </p>
+    <p><strong>Location: Mominpore, Kolkata, West Bengal</strong></p>
+  </section>
+</main>
 
 <footer>
-© 2026 Bright Future Tuition Classes | Mominpore, Kolkata
+  © 2026 Bright Future Tuition. All rights reserved.
+  <br>Learn • Practise • Grow
 </footer>
 
 </body>
